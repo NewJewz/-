@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Mew.css">
+    <title>Luv MEW Nakub</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr); /* 6 รูปใน 1 แถว */
+            gap: 15px;
+            width: 90%;
+            max-width: 750px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1; /* ทำให้รูปภาพมีขนาดเท่ากัน */
+            border: 1px solid rgba(0, 0, 0, 0.2); /* ขอบมินิมอล */
+            border-radius: 5px; /* มุมโค้ง */
+            transition: transform 0.3s ease; /* การเปลี่ยนแปลง */
+        }
+
+        .gallery img:hover {
+            transform: scale(1.20); /* ขยายรูปภาพเมื่อเอาเมาส์ไปอยู่บนรูป */
+        }
+
+        .thank-you {
+            grid-column: span 6; /* ขยายให้ครอบคลุมทั้ง 6 คอลัมน์ */
+            text-align: center; /* จัดข้อความให้อยู่กลาง */
+            font-size: 18px; /* ขนาดตัวอักษร */
+            color: #555; /* สีของข้อความ */
+            margin-top: 20px; /* เว้นระยะห่างด้านบน */
+            margin-bottom: 20px; /* เว้นระยะห่างด้านล่าง */
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <!-- เพิ่มรูปภาพที่นี่ -->
+        <img src="1.jpg" alt="Image 1">
+        <img src="2.jpg" alt="Image 2">
+        <img src="3.jpg" alt="Image 3">
+        <img src="4.jpg" alt="Image 4">
+        <img src="5.jpg" alt="Image 5">
+        <img src="6.jpg" alt="Image 6">
+        <img src="7.jpg" alt="Image 7">
+        <img src="8.jpg" alt="Image 8">
+        <img src="9.jpg" alt="Image 9">
+        <img src="10.jpg" alt="Image 10">
+        <img src="11.jpg" alt="Image 11">
+        <img src="12.jpg" alt="Image 12">
+        <img src="13.jpg" alt="Image 13">
+        <img src="14.jpg" alt="Image 14">
+        <img src="15.jpg" alt="Image 15">
+        <img src="16.jpg" alt="Image 16">
+        <img src="17.jpg" alt="Image 17">
+        <img src="18.jpg" alt="Image 18">
+        <img src="19.jpg" alt="Image 19">
+        <img src="20.jpg" alt="Image 20">
+        <img src="21.jpg" alt="Image 21">
+        <img src="22.jpg" alt="Image 22">
+        <img src="23.jpg" alt="Image 23">
+        <img src="24.jpg" alt="Image 24">
+        <img src="25.jpg" alt="Image 25">
+        <img src="26.jpg" alt="Image 26">
+        <img src="27.jpg" alt="Image 27">
+        <img src="28.jpg" alt="Image 28">
+        <img src="29.jpg" alt="Image 29">
+        <img src="30.jpg" alt="Image 30">
+    </div>
+    <div class="thank-you">
+        รูปทั้งหมดนี้เป็นรูปที่เราอยู่ด้วยกันหมดเยยย<br> 
+        ตอนนั้นเค้ามีความสุขมากๆเลยอ่าอ้วน<br>     
+        เค้าตั้งใจทำมากๆเยย ดีกันนะคะที่รักน้าาาาา<br>                      
+    </div>
+</body>
+</html>

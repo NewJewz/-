@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โครงงานคอมพิวเตอร์</title>
+    <link rel="stylesheet" href="Mew.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="Deegun.jpg" alt="Center Image" class="responsive-image">
+        </div>
+        <div class="button-container">
+            <button id="button1" onclick="resizeButton('button1', 'button2')">ไม่อ่ะ:(</button>
+            <button id="button2" onclick="goToNewPage()">ดี:)</button>
+        </div>
+    </div>
+
+    <script>
+        let size1 = 1; 
+        let size2 = 1;
+
+        function resizeButton(clickedButtonId, otherButtonId) {
+            const clickedButton = document.getElementById(clickedButtonId);
+            const otherButton = document.getElementById(otherButtonId);
+
+            size1 = Math.max(size1 - 0.05, 0); 
+            size2 = Math.min(size2 + 0.35, 20); 
+
+            clickedButton.style.transform = `scale(${size1})`;
+            otherButton.style.transform = `scale(${size2})`;
+        }
+
+        function goToNewPage() {
+            window.location.href = "MEWPIC.html"; 
+        }
+    </script>
+</body>
+</html>
